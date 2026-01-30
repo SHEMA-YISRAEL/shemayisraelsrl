@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "mission": "Mission & Vision",
+    "units": "Business Units",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Innovation, excellence and purpose",
+    "subtitle": "Comprehensive solutions in health, education and technology",
+    "cta": "Discover our units"
+  },
+  "about": {
+    "title": "Who We Are",
+    "subtitle": "The pillars of our company",
+    "intro": "At Shema Yisrael S.R.L., YESHUA is the foundation upon which we build our businesses, decisions and service to the community. We believe that every project should be guided by solid principles, where we not only seek business success, but also to bless through what we do.",
+    "pillars": {
+      "teamwork": { "title": "Teamwork", "desc": "We believe in collaboration to achieve collective success." },
+      "respect": { "title": "Respect", "desc": "We value the dignity of every person, promoting inclusion and equity." },
+      "integrity": { "title": "Integrity", "desc": "We act with transparency and ethics in all our relationships." },
+      "growth": { "title": "Continuous Growth", "desc": "We foster personal and professional development." },
+      "excellence": { "title": "Excellence", "desc": "We offer high-quality services with a sense of continuous improvement." },
+      "innovation": { "title": "Innovation", "desc": "We apply technology and innovative solutions." },
+      "social": { "title": "Social Responsibility", "desc": "We positively impact our community and the world." }
+    }
+  },
+  "mission": {
+    "title": "Our Mission",
+    "subtitle": "Serving with Purpose",
+    "text": "At Shema Yisrael S.R.L., we are committed to providing comprehensive health, education and technology solutions with the highest quality standards. Through excellence in medical care, specialized professional training and the implementation of innovative technologies, we seek to generate a positive and lasting impact on the lives of our clients, promoting the well-being and progress of society.",
+    "quote": "The true value of a business is not in what it does, but in how it changes people's lives.",
+    "quoteAuthor": "Howard Schultz"
+  },
+  "vision": {
+    "title": "Our Vision",
+    "subtitle": "Innovation for the future",
+    "text": "To be the leading company in Latin America in the development and provision of comprehensive solutions in the health, education and technology sectors, consolidating ourselves as a benchmark of excellence and innovation. Our vision is to expand our regional presence, positioning our medical centers, educational programs and technological developments as reference models in quality, social impact and sustainability."
+  },
+  "units": {
+    "title": "Our Business Units",
+    "subtitle": "Innovation, excellence and purpose in every sector",
+    "learnMore": "Learn more"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help you",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "unit": "Unit of interest",
+    "selectUnit": "Select a unit",
+    "general": "General inquiry",
+    "send": "Send message",
+    "success": "Message sent successfully",
+    "error": "Error sending message"
+  },
+  "unitPage": {
+    "backHome": "Back to home",
+    "contactUs": "Contact Us",
+    "ourDifference": "Our Differentiating Value",
+    "aboutUnit": "About us"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Innovation, excellence and purpose"
+  }
+}

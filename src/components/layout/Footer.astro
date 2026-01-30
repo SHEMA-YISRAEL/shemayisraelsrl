@@ -1,0 +1,64 @@
+---
+import { t, type Lang } from '../../i18n';
+import { units } from '../../data/units';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-corp-dark text-white/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/favicon.svg" alt="Shema Yisrael" class="h-10 w-auto" />
+          <div>
+            <h3 class="text-white font-bold text-lg">SHEMA YISRAEL S.R.L.</h3>
+            <p class="text-sm text-white/50">{t('footer.tagline', lang)}</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed text-white/60 mt-4">
+          {lang === 'es'
+            ? 'Soluciones integrales en salud, educación y tecnología con los más altos estándares de calidad.'
+            : 'Comprehensive solutions in health, education and technology with the highest quality standards.'}
+        </p>
+      </div>
+
+      <!-- Units -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t('nav.units', lang)}</h4>
+        <ul class="space-y-2">
+          {units.map(unit => (
+            <li>
+              <a
+                href={lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`}
+                class="text-sm hover:text-white transition-colors duration-200"
+              >
+                {unit.name[lang]} — <span class="text-white/40">{unit.subtitle[lang]}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t('nav.contact', lang)}</h4>
+        <div class="space-y-3 text-sm">
+          <p>📧 info@shemayisraelsrl.com</p>
+          <p>📍 {lang === 'es' ? 'Latinoamérica' : 'Latin America'}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-white/10 mt-10 pt-6 text-center text-sm text-white/40">
+      <p>&copy; {year} Shema Yisrael S.R.L. {t('footer.rights', lang)}</p>
+    </div>
+  </div>
+</footer>

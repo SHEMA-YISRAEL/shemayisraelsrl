@@ -1,0 +1,54 @@
+---
+import { t, type Lang, getLocalizedPath } from '../../i18n';
+import MobileMenu from '../ui/MobileMenu.tsx';
+import LanguageSwitch from '../ui/LanguageSwitch.tsx';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const navLinks = [
+  { href: '#about', label: t('nav.about', lang) },
+  { href: '#mission', label: t('nav.mission', lang) },
+  { href: '#units', label: t('nav.units', lang) },
+  { href: '#contact', label: t('nav.contact', lang) },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-corp-dark/95 backdrop-blur-sm border-b border-white/10">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3 shrink-0">
+        <img src="/favicon.svg" alt="Shema Yisrael" class="h-8 md:h-10 w-auto" />
+        <span class="text-white font-semibold text-sm md:text-base tracking-wide hidden sm:block">
+          SHEMA YISRAEL S.R.L.
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-6 lg:gap-8">
+        {navLinks.map(link => (
+          <a
+            href={link.href}
+            class="text-white/80 hover:text-white text-sm font-medium transition-colors duration-200"
+          >
+            {link.label}
+          </a>
+        ))}
+        <LanguageSwitch lang={lang} client:load />
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden flex items-center gap-3">
+        <LanguageSwitch lang={lang} client:load />
+        <MobileMenu links={navLinks} client:load />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-16 md:h-20"></div>

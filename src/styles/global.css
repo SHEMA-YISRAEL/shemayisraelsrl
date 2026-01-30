@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  /* Corporate Colors */
+  --color-corp-primary: #1a3a5c;
+  --color-corp-secondary: #2c5f8a;
+  --color-corp-dark: #0f2337;
+  --color-corp-light: #e8f0f8;
+
+  /* Yeshua - Centro Medico */
+  --color-yeshua-primary: #0077b6;
+  --color-yeshua-secondary: #023e8a;
+  --color-yeshua-accent: #90e0ef;
+  --color-yeshua-light: #e6f4fa;
+
+  /* Neshima - Clinica Estetica */
+  --color-neshima-primary: #b08968;
+  --color-neshima-secondary: #7f5539;
+  --color-neshima-accent: #f5ebe0;
+  --color-neshima-light: #faf6f1;
+
+  /* Yeshiva - Instituto Tecnico */
+  --color-yeshiva-primary: #c77f32;
+  --color-yeshiva-secondary: #7c4a1e;
+  --color-yeshiva-accent: #fef3c7;
+  --color-yeshiva-light: #fef9ee;
+
+  /* Netiv - Negocios Internacionales */
+  --color-netiv-primary: #0f4c75;
+  --color-netiv-secondary: #1b262c;
+  --color-netiv-accent: #3282b8;
+  --color-netiv-light: #e4f0f8;
+
+  /* Soluciones Tecnologicas */
+  --color-soltech-primary: #4a5568;
+  --color-soltech-secondary: #2d3748;
+  --color-soltech-accent: #63b3ed;
+  --color-soltech-light: #edf2f7;
+
+  /* Planta Procesadora */
+  --color-planta-primary: #c0392b;
+  --color-planta-secondary: #922b21;
+  --color-planta-accent: #f5b7b1;
+  --color-planta-light: #fdf2f0;
+
+  /* Investigacion Medica */
+  --color-invmed-primary: #2471a3;
+  --color-invmed-secondary: #1a5276;
+  --color-invmed-accent: #aed6f1;
+  --color-invmed-light: #eaf4fb;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1a202c;
+    line-height: 1.6;
+  }
+}

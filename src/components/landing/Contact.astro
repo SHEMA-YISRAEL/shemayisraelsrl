@@ -1,0 +1,71 @@
+---
+import { t, type Lang } from '../../i18n';
+import { units } from '../../data/units';
+import ContactForm from '../ui/ContactForm.tsx';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const unitOptions = units.map(u => ({ id: u.id, name: u.name[lang] }));
+const labels = {
+  name: t('contact.name', lang),
+  email: t('contact.email', lang),
+  message: t('contact.message', lang),
+  unit: t('contact.unit', lang),
+  selectUnit: t('contact.selectUnit', lang),
+  general: t('contact.general', lang),
+  send: t('contact.send', lang),
+  success: t('contact.success', lang),
+  error: t('contact.error', lang),
+};
+---
+
+<section id="contact" class="py-20 md:py-28 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <!-- Left: Info -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-corp-primary mb-4">
+          {t('contact.title', lang)}
+        </h2>
+        <p class="text-gray-600 text-lg mb-8">
+          {t('contact.subtitle', lang)}
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-corp-light rounded-lg flex items-center justify-center text-xl shrink-0">
+              📧
+            </div>
+            <div>
+              <h4 class="font-semibold text-corp-primary">Email</h4>
+              <p class="text-gray-500 text-sm">info@shemayisraelsrl.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-corp-light rounded-lg flex items-center justify-center text-xl shrink-0">
+              📍
+            </div>
+            <div>
+              <h4 class="font-semibold text-corp-primary">
+                {lang === 'es' ? 'Ubicación' : 'Location'}
+              </h4>
+              <p class="text-gray-500 text-sm">
+                {lang === 'es' ? 'Latinoamérica' : 'Latin America'}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+        <ContactForm lang={lang} units={unitOptions} labels={labels} client:visible />
+      </div>
+    </div>
+  </div>
+</section>
