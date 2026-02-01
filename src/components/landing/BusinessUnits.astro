@@ -35,13 +35,18 @@ const { lang } = Astro.props;
           ></div>
 
           <div class="p-6 md:p-8">
-            <!-- Icon + Name -->
+            <!-- iconRoute + Name -->
             <div class="flex items-start gap-4 mb-4">
               <div
-                class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0"
+                class="w-12 h-12 rounded-xl flex items-center justify-center p-2.5 shrink-0"
                 style={`background-color: ${unit.colors.light}`}
               >
-                {unit.icon}
+                <img
+                  src={unit.iconRoute}
+                  alt={unit.name[lang]}
+                  class="w-full h-full object-contain"
+                  style={`filter: brightness(0) saturate(100%);`}
+                />
               </div>
               <div>
                 <h3

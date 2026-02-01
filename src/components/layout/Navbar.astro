@@ -1,5 +1,6 @@
 ---
 import { t, type Lang, getLocalizedPath } from '../../i18n';
+import { units } from '../../data/units';
 import MobileMenu from '../ui/MobileMenu.tsx';
 import LanguageSwitch from '../ui/LanguageSwitch.tsx';
 
@@ -12,7 +13,15 @@ const { lang } = Astro.props;
 const navLinks = [
   { href: '#about', label: t('nav.about', lang) },
   { href: '#mission', label: t('nav.mission', lang) },
-  { href: '#units', label: t('nav.units', lang) },
+  {
+    label: t('nav.units', lang),
+    children: units.map(unit => ({
+      href: lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`,
+      label: unit.name[lang],
+      subtitle: unit.subtitle[lang],
+      iconRouteRoute: unit.iconRoute,
+    })),
+  },
   { href: '#contact', label: t('nav.contact', lang) },
 ];
 ---
@@ -22,24 +31,80 @@ const navLinks = [
     <div class="flex items-center justify-between h-16 md:h-20">
       <!-- Logo -->
       <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3 shrink-0">
-        <img src="/favicon.svg" alt="Shema Yisrael" class="h-8 md:h-10 w-auto" />
+        <img src="/logo.svg" alt="Shema Yisrael" class="h-8 md:h-12 w-auto" />
         <span class="text-white font-semibold text-sm md:text-base tracking-wide hidden sm:block">
           SHEMA YISRAEL S.R.L.
         </span>
       </a>
 
       <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center gap-6 lg:gap-8">
-        {navLinks.map(link => (
-          <a
-            href={link.href}
-            class="text-white/80 hover:text-white text-sm font-medium transition-colors duration-200"
+     <div class="hidden md:flex items-center gap-6 lg:gap-8">
+        <a
+          href="#about"
+          class="text-white/80 hover:text-white text-sm font-medium transition-colors"
+        >
+          {t('nav.about', lang)}
+        </a>
+
+        <a
+          href="#mission"
+          class="text-white/80 hover:text-white text-sm font-medium transition-colors"
+        >
+          {t('nav.mission', lang)}
+        </a>
+
+        <!-- Units Dropdown -->
+        <div class="relative group">
+          <button
+            class="text-white/80 hover:text-white text-sm font-medium transition-colors flex items-center gap-1"
           >
-            {link.label}
-          </a>
-        ))}
+            {t('nav.units', lang)}
+            <svg class="w-4 h-4 mt-0.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div
+            class="absolute left-0 top-full mt-3 w-80 rounded-xl bg-corp-dark/95 backdrop-blur-md
+                  border border-white/10 shadow-xl opacity-0 invisible
+                  group-hover:opacity-100 group-hover:visible
+                  transition-all duration-200"
+          >
+            <ul class="p-3 space-y-1">
+              {units.map(unit => (
+                <li>
+                  <a
+                    href={lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`}
+                    class="block rounded-lg px-3 py-2 text-sm text-white/80
+                          hover:text-white hover:bg-white/5 transition"
+                  >
+                    <span class="font-medium">
+                      <img
+                        src={unit.iconRoute}
+                        alt={unit.name[lang]}
+                        class="w-7 h-7 object-contain filter brightness-0 invert"
+                      />
+                       {unit.name[lang]}</span>
+                    <span class="block text-xs text-white/40">
+                      {unit.subtitle[lang]}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <a
+          href="#contact"
+          class="text-white/80 hover:text-white text-sm font-medium transition-colors"
+        >
+          {t('nav.contact', lang)}
+        </a>
+
         <LanguageSwitch lang={lang} client:load />
       </div>
+
 
       <!-- Mobile Menu -->
       <div class="md:hidden flex items-center gap-3">

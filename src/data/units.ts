@@ -12,7 +12,7 @@ export interface BusinessUnit {
     accent: string;
     light: string;
   };
-  icon: string;
+  iconRoute: string;
 }
 
 export const units: BusinessUnit[] = [
@@ -39,7 +39,7 @@ export const units: BusinessUnit[] = [
       accent: "#90e0ef",
       light: "#e6f4fa",
     },
-    icon: "🏥",
+    iconRoute: "/yeshua/icono.svg",
   },
   {
     id: "neshima",
@@ -61,7 +61,7 @@ export const units: BusinessUnit[] = [
       accent: "#f5ebe0",
       light: "#faf6f1",
     },
-    icon: "✨",
+    iconRoute: "public/neshima/icono.svg",
   },
   {
     id: "yeshiva",
@@ -83,7 +83,7 @@ export const units: BusinessUnit[] = [
       accent: "#fef3c7",
       light: "#fef9ee",
     },
-    icon: "🎓",
+    iconRoute: "/yeshiva/icono.svg",
   },
   {
     id: "netiv",
@@ -105,7 +105,7 @@ export const units: BusinessUnit[] = [
       accent: "#3282b8",
       light: "#e4f0f8",
     },
-    icon: "🌐",
+    iconRoute: "/netiv/icono.svg",
   },
   {
     id: "soluciones-tecnologicas",
@@ -130,7 +130,7 @@ export const units: BusinessUnit[] = [
       accent: "#63b3ed",
       light: "#edf2f7",
     },
-    icon: "💻",
+    iconRoute: "/solucionesDigitales/icono.svg",
   },
   {
     id: "planta-procesadora",
@@ -155,7 +155,7 @@ export const units: BusinessUnit[] = [
       accent: "#f5b7b1",
       light: "#fdf2f0",
     },
-    icon: "🏭",
+    iconRoute: "/plantaProcesadora/icono.svg",
   },
   {
     id: "investigacion-medica",
@@ -180,7 +180,7 @@ export const units: BusinessUnit[] = [
       accent: "#aed6f1",
       light: "#eaf4fb",
     },
-    icon: "🔬",
+    iconRoute: "/investigacionMedica/icono.svg",
   },
 ];
 

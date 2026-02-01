@@ -8,17 +8,18 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-corp-dark">
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-corp-primary">
   <!-- Animated wave background -->
-  <div class="absolute inset-0 opacity-30">
+  <div class="absolute inset-0 opacity-60">
     <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 400" preserveAspectRatio="none">
-      <path d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,165.3C672,160,768,192,864,197.3C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z" fill="#2c5f8a" fill-opacity="0.3"></path>
-      <path d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z" fill="#1a3a5c" fill-opacity="0.4"></path>
+      <path d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,165.3C672,160,768,192,864,197.3C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z" fill="#2c5f8a"></path>
+      <path d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z" fill="#e8f0f8" fill-opacity="0.7"></path>
+      
     </svg>
   </div>
 
   <!-- Gradient overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-corp-dark/80 via-corp-dark/40 to-corp-dark/90"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-corp-primary/80 via-corp-primary/60 to-corp-dark/90"></div>
 
   <!-- Content -->
   <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
