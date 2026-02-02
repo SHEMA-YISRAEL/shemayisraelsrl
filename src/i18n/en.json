@@ -16,13 +16,34 @@
     "subtitle": "The pillars of our company",
     "intro": "At Shema Yisrael S.R.L., YESHUA is the foundation upon which we build our businesses, decisions and service to the community. We believe that every project should be guided by solid principles, where we not only seek business success, but also to bless through what we do.",
     "pillars": {
-      "teamwork": { "title": "Teamwork", "desc": "We believe in collaboration to achieve collective success." },
-      "respect": { "title": "Respect", "desc": "We value the dignity of every person, promoting inclusion and equity." },
-      "integrity": { "title": "Integrity", "desc": "We act with transparency and ethics in all our relationships." },
-      "growth": { "title": "Continuous Growth", "desc": "We foster personal and professional development." },
-      "excellence": { "title": "Excellence", "desc": "We offer high-quality services with a sense of continuous improvement." },
-      "innovation": { "title": "Innovation", "desc": "We apply technology and innovative solutions." },
-      "social": { "title": "Social Responsibility", "desc": "We positively impact our community and the world." }
+      "teamwork": {
+        "title": "Teamwork",
+        "desc": "We believe in collaboration to achieve collective success."
+      },
+      "respect": {
+        "title": "Respect",
+        "desc": "We value the dignity of every person, promoting inclusion and equity."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "desc": "We act with transparency and ethics in all our relationships."
+      },
+      "growth": {
+        "title": "Continuous Growth",
+        "desc": "We foster personal and professional development."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "desc": "We offer high-quality services with a sense of continuous improvement."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "We apply technology and innovative solutions."
+      },
+      "social": {
+        "title": "Social Responsibility",
+        "desc": "We positively impact our community and the world."
+      }
     }
   },
   "mission": {
@@ -40,7 +61,7 @@
   "units": {
     "title": "Our Business Units",
     "subtitle": "Innovation, excellence and purpose in every sector",
-    "badge": "Our Units",
+    "badge": "Areas of Impact",
     "learnMore": "Learn more"
   },
   "contact": {
@@ -61,6 +82,15 @@
     "contactUs": "Contact Us",
     "ourDifference": "Our Differentiating Value",
     "aboutUnit": "About us"
+  },
+  "network": {
+    "badge": "Global Network",
+    "title": "Our International Network",
+    "subtitle": "Connecting opportunities from Asia to Latin America",
+    "description": "Netiv Global operates as a strategic bridge for international business, facilitating commercial connections between South Korea, the United States and Bolivia. Our network enables the flow of innovation, technology and opportunities across continents.",
+    "korea": "South Korea",
+    "usa": "United States",
+    "bolivia": "Bolivia"
   },
   "footer": {
     "rights": "All rights reserved.",
