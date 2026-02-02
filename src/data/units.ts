@@ -13,6 +13,7 @@ export interface BusinessUnit {
     light: string;
   };
   iconRoute: string;
+  iconSize?: number;
 }
 
 export const units: BusinessUnit[] = [
@@ -34,12 +35,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "yeshua",
     colors: {
-      primary: "#0077b6",
-      secondary: "#023e8a",
-      accent: "#90e0ef",
+      primary: "#024063",
+      secondary: "#355d87",
+      accent: "#e0e3e4",
       light: "#e6f4fa",
     },
     iconRoute: "/yeshua/icono.svg",
+    iconSize: 10,
   },
   {
     id: "neshima",
@@ -56,12 +58,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "neshima",
     colors: {
-      primary: "#b08968",
-      secondary: "#7f5539",
-      accent: "#f5ebe0",
-      light: "#faf6f1",
+      primary: "#c2a88f",
+      secondary: "#4b3a3b",
+      accent: "#b3704a",
+      light: "#f3e4d2",
     },
-    iconRoute: "public/neshima/icono.svg",
+    iconRoute: "/neshima/icono.svg",
+    iconSize: 4,
   },
   {
     id: "yeshiva",
@@ -78,12 +81,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "yeshiva",
     colors: {
-      primary: "#c77f32",
-      secondary: "#7c4a1e",
-      accent: "#fef3c7",
+      primary: "#eeb90a",
+      secondary: "#1b3863",
+      accent: "#c77f32",
       light: "#fef9ee",
     },
     iconRoute: "/yeshiva/icono.svg",
+    iconSize: 4,
   },
   {
     id: "netiv",
@@ -100,12 +104,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "netiv",
     colors: {
-      primary: "#0f4c75",
+      primary: "#1e4b69",
       secondary: "#1b262c",
-      accent: "#3282b8",
-      light: "#e4f0f8",
+      accent: "#2d78aa",
+      light: "#d5eaf8",
     },
     iconRoute: "/netiv/icono.svg",
+    iconSize: 6,
   },
   {
     id: "soluciones-tecnologicas",
@@ -125,12 +130,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "soltech",
     colors: {
-      primary: "#4a5568",
-      secondary: "#2d3748",
-      accent: "#63b3ed",
-      light: "#edf2f7",
+      primary: "#031a6b",
+      secondary: "#033860",
+      accent: "#05b2dc",
+      light: "#bbdde9",
     },
     iconRoute: "/solucionesDigitales/icono.svg",
+    iconSize: 8,
   },
   {
     id: "planta-procesadora",
@@ -150,12 +156,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "planta",
     colors: {
-      primary: "#c0392b",
-      secondary: "#922b21",
-      accent: "#f5b7b1",
-      light: "#fdf2f0",
+      primary: "#ade25d",
+      secondary: "#3a5743",
+      accent: "#fcec52",
+      light: "#cfffb3",
     },
     iconRoute: "/plantaProcesadora/icono.svg",
+    iconSize: 20,
   },
   {
     id: "investigacion-medica",
@@ -175,12 +182,13 @@ export const units: BusinessUnit[] = [
     },
     colorKey: "invmed",
     colors: {
-      primary: "#2471a3",
-      secondary: "#1a5276",
-      accent: "#aed6f1",
-      light: "#eaf4fb",
+      primary: "#068d9d",
+      secondary: "#53599a",
+      accent: "#80ded9",
+      light: "#aeecef",
     },
     iconRoute: "/investigacionMedica/icono.svg",
+    iconSize: 20,
   },
 ];
 

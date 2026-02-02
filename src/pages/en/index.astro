@@ -7,12 +7,18 @@ import BusinessUnits from '../../components/landing/BusinessUnits.astro';
 import Contact from '../../components/landing/Contact.astro';
 
 const lang = 'en';
+
+const title = 'Shema Yisrael S.R.L. | Innovation, Excellence and Purpose';
+const description =
+  'Shema Yisrael S.R.L. is a multidisciplinary company in healthcare, education, and technology, driven by purpose, innovation, excellence, and social impact.';
 ---
 
-<Layout lang={lang} title="Shema Yisrael S.R.L. | Innovation, excellence and purpose">
-  <Hero lang={lang} />
-  <About lang={lang} />
-  <MissionVision lang={lang} />
-  <BusinessUnits lang={lang} />
-  <Contact lang={lang} />
+<Layout lang={lang} title={title} description={description}>
+  <main>
+    <Hero lang={lang} />
+    <About lang={lang} />
+    <MissionVision lang={lang} />
+    <BusinessUnits lang={lang} />
+    <Contact lang={lang} />
+  </main>
 </Layout>

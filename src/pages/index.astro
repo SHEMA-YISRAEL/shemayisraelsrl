@@ -7,12 +7,18 @@ import BusinessUnits from '../components/landing/BusinessUnits.astro';
 import Contact from '../components/landing/Contact.astro';
 
 const lang = 'es';
+
+const title = 'Shema Yisrael S.R.L. | Innovación, excelencia y propósito';
+const description =
+  'Shema Yisrael S.R.L. es una empresa multidisciplinaria en salud, educación y tecnología, guiada por propósito, innovación, excelencia e impacto social.';
 ---
 
-<Layout lang={lang} title="Shema Yisrael S.R.L. | Innovación, excelencia y propósito">
-  <Hero lang={lang} />
-  <About lang={lang} />
-  <MissionVision lang={lang} />
-  <BusinessUnits lang={lang} />
-  <Contact lang={lang} />
+<Layout lang={lang} title={title} description={description}>
+  <main>
+    <Hero lang={lang} />
+    <About lang={lang} />
+    <MissionVision lang={lang} />
+    <BusinessUnits lang={lang} />
+    <Contact lang={lang} />
+  </main>
 </Layout>

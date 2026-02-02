@@ -1,3 +1,4 @@
+
 ---
 import { t, type Lang, getLocalizedPath } from '../../i18n';
 import { units } from '../../data/units';
@@ -19,7 +20,7 @@ const navLinks = [
       href: lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`,
       label: unit.name[lang],
       subtitle: unit.subtitle[lang],
-      iconRouteRoute: unit.iconRoute,
+      iconRoute: unit.iconRoute,
     })),
   },
   { href: '#contact', label: t('nav.contact', lang) },
@@ -32,7 +33,7 @@ const navLinks = [
       <!-- Logo -->
       <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3 shrink-0">
         <img src="/logo.svg" alt="Shema Yisrael" class="h-8 md:h-12 w-auto" />
-        <span class="text-white font-semibold text-sm md:text-base tracking-wide hidden sm:block">
+        <span class="text-white font-semibold text-sm md:text-base tracking-wide">
           SHEMA YISRAEL S.R.L.
         </span>
       </a>
@@ -75,19 +76,22 @@ const navLinks = [
                 <li>
                   <a
                     href={lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`}
-                    class="block rounded-lg px-3 py-2 text-sm text-white/80
+                    class="block rounded-lg px-3 py-2 text-sm text-white/80 flex flex-row
                           hover:text-white hover:bg-white/5 transition"
                   >
-                    <span class="font-medium">
+                    <span class="font-medium flex justify-center items-center
+                                  w-10 h-10 bg-white/5 rounded-lg shrink-0">
                       <img
                         src={unit.iconRoute}
                         alt={unit.name[lang]}
-                        class="w-7 h-7 object-contain filter brightness-0 invert"
+                        class={`object-contain filter brightness-0 invert ${unit.iconSize ? `w-${unit.iconSize} h-${unit.iconSize}` : ''}`}
                       />
-                       {unit.name[lang]}</span>
-                    <span class="block text-xs text-white/40">
-                      {unit.subtitle[lang]}
                     </span>
+                    <div class="pl-5">
+                      <span class="font-medium">{unit.name[lang]}</span>
+                      <span class="block text-xs text-white/40">{unit.subtitle[lang]}</span>
+                    </div>
+                    
                   </a>
                 </li>
               ))}
