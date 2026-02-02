@@ -57,14 +57,25 @@ export default function MobileMenu({ links }: { links: NavLink[] }) {
                             key={child.href}
                             href={child.href}
                             onClick={() => setIsOpen(false)}
-                            className="block py-2 text-sm text-white/70 hover:text-white"
+                            className="flex items-center gap-3 py-2 text-sm text-white/70 hover:text-white"
                           >
-                            {child.iconRoute} {child.label}
-                            {child.subtitle && (
-                              <span className="block text-xs text-white/40">
-                                {child.subtitle}
+                            {child.iconRoute && (
+                              <span className="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center shrink-0">
+                                <img
+                                  src={child.iconRoute}
+                                  alt={child.label}
+                                  className="w-5 h-5 object-contain brightness-0 invert"
+                                />
                               </span>
                             )}
+                            <span>
+                              {child.label}
+                              {child.subtitle && (
+                                <span className="block text-xs text-white/40">
+                                  {child.subtitle}
+                                </span>
+                              )}
+                            </span>
                           </a>
                         ))}
                       </div>

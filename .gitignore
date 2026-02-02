@@ -17,6 +17,10 @@ pnpm-debug.log*
 .env
 .env.production
 
+# large video files (hosted on Cloudflare R2)
+*.MP4
+*.mp4
+
 # macOS-specific files
 .DS_Store
 

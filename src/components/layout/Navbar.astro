@@ -11,19 +11,22 @@ interface Props {
 
 const { lang } = Astro.props;
 
+const basePath = getLocalizedPath('/', lang);
+
 const navLinks = [
-  { href: '#about', label: t('nav.about', lang) },
-  { href: '#mission', label: t('nav.mission', lang) },
+  { href: `${basePath}#about`, label: t('nav.about', lang) },
+  { href: `${basePath}#mission`, label: t('nav.mission', lang) },
   {
     label: t('nav.units', lang),
     children: units.map(unit => ({
-      href: lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`,
+      href: getLocalizedPath(`/${unit.slug}`, lang),
       label: unit.name[lang],
       subtitle: unit.subtitle[lang],
       iconRoute: unit.iconRoute,
     })),
   },
-  { href: '#contact', label: t('nav.contact', lang) },
+  { href: `${basePath}#network`, label: t('network.badge', lang) },
+  { href: `${basePath}#contact`, label: t('nav.contact', lang) },
 ];
 ---
 
@@ -41,14 +44,14 @@ const navLinks = [
       <!-- Desktop Nav -->
      <div class="hidden md:flex items-center gap-6 lg:gap-8">
         <a
-          href="#about"
+          href={`${basePath}#about`}
           class="text-white/80 hover:text-white text-sm font-medium transition-colors"
         >
           {t('nav.about', lang)}
         </a>
 
         <a
-          href="#mission"
+          href={`${basePath}#mission`}
           class="text-white/80 hover:text-white text-sm font-medium transition-colors"
         >
           {t('nav.mission', lang)}
@@ -75,7 +78,7 @@ const navLinks = [
               {units.map(unit => (
                 <li>
                   <a
-                    href={lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`}
+                    href={getLocalizedPath(`/${unit.slug}`, lang)}
                     class="block rounded-lg px-3 py-2 text-sm text-white/80 flex flex-row
                           hover:text-white hover:bg-white/5 transition"
                   >
@@ -100,7 +103,14 @@ const navLinks = [
         </div>
 
         <a
-          href="#contact"
+          href={`${basePath}#network`}
+          class="text-white/80 hover:text-white text-sm font-medium transition-colors"
+        >
+          {t('network.badge', lang)}
+        </a>
+
+        <a
+          href={`${basePath}#contact`}
           class="text-white/80 hover:text-white text-sm font-medium transition-colors"
         >
           {t('nav.contact', lang)}
