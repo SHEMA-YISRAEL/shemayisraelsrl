@@ -1,11 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/landing/Hero.astro';
+import About from '../components/landing/About.astro';
+import MissionVision from '../components/landing/MissionVision.astro';
+import BusinessUnits from '../components/landing/BusinessUnits.astro';
+import Contact from '../components/landing/Contact.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const lang = 'es';
+
+const title = 'Shema Yisrael S.R.L. | Innovación, excelencia y propósito';
+const description =
+  'Shema Yisrael S.R.L. es una empresa multidisciplinaria en salud, educación y tecnología, guiada por propósito, innovación, excelencia e impacto social.';
 ---
 
-<Layout>
-	<Welcome />
+<Layout lang={lang} title={title} description={description}>
+  <main>
+    <Hero lang={lang} />
+    <About lang={lang} />
+    <MissionVision lang={lang} />
+    <BusinessUnits lang={lang} />
+    <Contact lang={lang} />
+  </main>
 </Layout>

@@ -1,0 +1,220 @@
+---
+import { t, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-corp-primary">
+  <!-- Animated gradient background -->
+  <div class="absolute inset-0 hero-gradient"></div>
+
+  <!-- Animated wave background -->
+  <div class="absolute inset-0 opacity-60">
+    <svg class="absolute bottom-0 left-0 w-full wave-animation" viewBox="0 0 1440 400" preserveAspectRatio="none">
+      <path d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,165.3C672,160,768,192,864,197.3C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z" fill="#2c5f8a"></path>
+      <path class="wave-path-2" d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z" fill="#e8f0f8" fill-opacity="0.7"></path>
+    </svg>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="floating-particle particle-1"></div>
+    <div class="floating-particle particle-2"></div>
+    <div class="floating-particle particle-3"></div>
+  </div>
+
+  <!-- Gradient overlay -->
+  <div class="absolute inset-0 bg-linear-to-t from-corp-primary/80 via-corp-primary/60 to-corp-dark/90"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center px-4 max-w-4xl mx-auto">
+    <div class="mb-8 animate-fade-in-down">
+      <img
+        src="/Logo-White.svg"
+        alt="Shema Yisrael S.R.L."
+        class="h-28 md:h-40 w-auto drop-shadow-lg logo-float"
+      />
+    </div>
+
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-center animate-fade-in-slow">
+      {t('hero.tagline', lang)}
+    </h1>
+
+    <p class="text-lg md:text-xl text-white/70 mb-10 max-w-2xl leading-relaxed text-center animate-fade-in-slow delay-200">
+      {t('hero.subtitle', lang)}
+    </p>
+
+    <a
+      href="#units"
+      class="group inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 backdrop-blur-sm text-sm md:text-base animate-fade-in-slow delay-400 hover:scale-105 hover:border-white/40"
+    >
+      {t('hero.cta', lang)}
+      <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
+    <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+      <div class="w-1 h-3 bg-white/50 rounded-full mt-2 scroll-dot"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Hero gradient animation */
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-corp-dark) 0%,
+      var(--color-corp-primary) 50%,
+      var(--color-corp-secondary) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease-in-out infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /* Logo floating animation */
+  .logo-float {
+    animation: logoFloat 4s ease-in-out infinite;
+  }
+
+  @keyframes logoFloat {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  /* Wave animation */
+  .wave-animation {
+    animation: waveMove 8s ease-in-out infinite;
+  }
+
+  .wave-path-2 {
+    animation: waveMove2 10s ease-in-out infinite;
+  }
+
+  @keyframes waveMove {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+  }
+
+  @keyframes waveMove2 {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+
+  /* Floating particles */
+  .floating-particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .particle-1 {
+    width: 20px;
+    height: 20px;
+    top: 20%;
+    left: 10%;
+    animation: floatParticle 6s ease-in-out infinite;
+  }
+
+  .particle-2 {
+    width: 15px;
+    height: 15px;
+    top: 60%;
+    right: 15%;
+    animation: floatParticle 8s ease-in-out infinite 1s;
+  }
+
+  .particle-3 {
+    width: 10px;
+    height: 10px;
+    top: 40%;
+    left: 80%;
+    animation: floatParticle 7s ease-in-out infinite 2s;
+  }
+
+  @keyframes floatParticle {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-30px) translateX(10px);
+      opacity: 0.6;
+    }
+  }
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    animation: fadeInUp 1s ease-out 1s forwards;
+    opacity: 0;
+  }
+
+  .scroll-dot {
+    animation: scrollDot 1.5s ease-in-out infinite;
+  }
+
+  @keyframes scrollDot {
+    0%, 100% {
+      transform: translateY(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(12px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px) translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-gradient,
+    .logo-float,
+    .wave-animation,
+    .wave-path-2,
+    .floating-particle,
+    .scroll-dot {
+      animation: none;
+    }
+    .scroll-indicator {
+      opacity: 1;
+    }
+  }
+</style>

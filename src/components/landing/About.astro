@@ -1,0 +1,137 @@
+---
+import { t, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const pillars = [
+  { key: 'teamwork', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>' },
+  { key: 'respect', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 11l5-5 5 5M7 17l5-5 5 5"/></svg>' },
+  { key: 'integrity', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18M5.636 5.636l12.728 12.728M18.364 5.636L5.636 18.364"/></svg>' },
+  { key: 'growth', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>' },
+  { key: 'excellence', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>' },
+  { key: 'innovation', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18h6M10 22h4M12 2v1M12 22v-6M4.22 4.22l.71.71M18.36 4.93l.71-.71M1 12h2M21 12h2M4.22 19.78l.71-.71M18.36 19.07l.71.71"/><circle cx="12" cy="12" r="5"/></svg>' },
+  { key: 'social', iconSvg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>' },
+];
+---
+
+<section id="about" class="py-20 md:py-28 bg-white relative overflow-hidden">
+  <!-- Decorative background -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-1/4 -left-32 w-64 h-64 bg-corp-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -right-32 w-64 h-64 bg-corp-secondary/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Header -->
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-corp-primary mb-4">
+        {t('about.title', lang)}
+      </h2>
+      <p class="text-corp-secondary text-lg md:text-xl font-medium">
+        {t('about.subtitle', lang)}
+      </p>
+    </div>
+
+    <!-- Intro -->
+    <div class="max-w-3xl mx-auto text-center mb-16 animate-on-scroll">
+      <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+        {t('about.intro', lang)}
+      </p>
+    </div>
+
+    <!-- Pillars Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {pillars.map((pillar, index) => (
+        <div
+          class="pillar-card group bg-corp-light/50 hover:bg-corp-light border border-corp-primary/5 rounded-2xl p-6 text-center transition-all duration-500 hover:shadow-xl animate-on-scroll-scale"
+          style={`animation-delay: ${index * 80}ms;`}
+        >
+          <div class="relative w-12 h-12 mx-auto mb-4">
+            <div class="absolute inset-0 group-hover:scale-110 transition-transform duration-300"></div>
+            <div class="relative w-full h-full flex items-center justify-center text-corp-dark group-hover:text-corp-primary transition-colors duration-300" set:html={pillar.iconSvg}></div>
+          </div>
+          <h3 class="text-corp-primary font-semibold text-base mb-2 group-hover:-translate-y-0.5 transition-transform duration-300">
+            {t(`about.pillars.${pillar.key}.title`, lang)}
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed group-hover:text-gray-600 transition-colors duration-300">
+            {t(`about.pillars.${pillar.key}.desc`, lang)}
+          </p>
+        </div>
+      ))}
+
+      <!-- Central pillar - YHWH -->
+      <div class="yhwh-card bg-corp-primary text-white rounded-2xl p-6 text-center flex flex-col items-center justify-center shadow-lg animate-on-scroll-scale relative overflow-hidden">
+        <!-- Glow effect -->
+        <div class="absolute inset-0 bg-linear-to-br from-white/10 to-transparent"></div>
+
+        <div class="relative">
+          <div class="text-3xl mb-2 font-bold yhwh-text">יהוה</div>
+          <div class="text-xs uppercase tracking-widest opacity-70">(YHWH)</div>
+          <h3 class="font-semibold text-base mt-3">
+            {lang === 'es' ? 'Dios como Pilar Fundamental' : 'God as Fundamental Pillar'}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .pillar-card {
+    position: relative;
+  }
+
+  .pillar-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    padding: 1px;
+    background: linear-gradient(135deg, transparent 0%, var(--color-corp-primary) 50%, transparent 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .pillar-card:hover::before {
+    opacity: 0.5;
+  }
+
+  .pillar-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .yhwh-card {
+    background: linear-gradient(135deg, var(--color-corp-primary) 0%, var(--color-corp-dark) 100%);
+  }
+
+  .yhwh-text {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes glowPulse {
+    0%, 100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+      text-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pillar-card:hover {
+      transform: none;
+    }
+    .yhwh-text {
+      animation: none;
+    }
+  }
+</style>

@@ -1,0 +1,8 @@
+---
+import UnitLayout from '../layouts/UnitLayout.astro';
+import { getUnit } from '../data/units';
+
+const unit = getUnit('investigacion-medica')!;
+---
+
+<UnitLayout unit={unit} lang="es" />

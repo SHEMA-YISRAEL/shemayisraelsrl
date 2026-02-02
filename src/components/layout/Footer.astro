@@ -1,0 +1,120 @@
+---
+import { t, type Lang } from '../../i18n';
+import { units } from '../../data/units';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-corp-dark text-white/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/favicon.svg" alt="Shema Yisrael" class="h-10 w-auto" />
+          <div>
+            <h3 class="text-white font-bold text-lg">SHEMA YISRAEL S.R.L.</h3>
+            <p class="text-sm text-white/50">{t('footer.tagline', lang)}</p>
+          </div>
+        </div>
+
+        <p class="text-sm leading-relaxed text-white/60 mt-4">
+          {lang === 'es'
+            ? 'Soluciones integrales en salud, educación y tecnología con los más altos estándares de calidad.'
+            : 'Comprehensive solutions in health, education and technology with the highest quality standards.'}
+        </p>
+
+        <!-- Social links -->
+        <div class="flex items-center gap-4 mt-6">
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/shemayisrael-s-r-l-746126382"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="text-white/50 hover:text-white transition-colors"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.5 8.98h4V24h-4V8.98zM8.5 8.98h3.84v2.05h.05c.54-1.02 1.86-2.1 3.83-2.1 4.1 0 4.78 2.7 4.78 6.2V24h-4v-8.34c0-1.99-.04-4.55-2.78-4.55-2.78 0-3.2 2.17-3.2 4.41V24h-4V8.98z"/>
+            </svg>
+          </a>
+
+          <!-- WhatsApp (logo oficial bien centrado) -->
+          <a
+            href="https://wa.me/59176981109"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            class="text-white/50 hover:text-white transition-colors"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.93.51 3.81 1.48 5.46L2 22l4.78-1.56a9.86 9.86 0 0 0 5.26 1.51h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 17.97a8.04 8.04 0 0 1-4.1-1.12l-.29-.17-2.84.93.95-2.77-.18-.28a7.97 7.97 0 1 1 6.46 3.41zm4.43-5.98c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.83-.84 2.02s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.65.58.25 1.03.4 1.38.51.58.18 1.12.15 1.54.09.47-.07 1.42-.58 1.62-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/profile.php?id=61580108335316"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="text-white/50 hover:text-white transition-colors"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.68 0H1.32C.59 0 0 .59 0 1.32v21.36C0 23.41.59 24 1.32 24h11.5v-9.29H9.69V11.1h3.13V8.41c0-3.1 1.89-4.79 4.65-4.79 1.32 0 2.46.1 2.79.14v3.24h-1.91c-1.5 0-1.79.71-1.79 1.76v2.31h3.58l-.47 3.61h-3.11V24h6.1c.73 0 1.32-.59 1.32-1.32V1.32C24 .59 23.41 0 22.68 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Units -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t('nav.units', lang)}</h4>
+        <ul class="space-y-2">
+          {units.map(unit => (
+            <li>
+              <a
+                href={lang === 'en' ? `/en/${unit.slug}` : `/${unit.slug}`}
+                class="text-sm hover:text-white transition-colors"
+              >
+                {unit.name[lang]} —
+                <span class="text-white/40"> {unit.subtitle[lang]}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">{t('nav.contact', lang)}</h4>
+        <div class="space-y-3 text-sm">
+          <p class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            administracion@shemayisraelsrl.com
+          </p>
+          <p class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            {lang === 'es' ? 'Latinoamérica' : 'Latin America'}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-white/10 mt-10 pt-6 text-center text-sm text-white/40">
+      <p>&copy; {year} Shema Yisrael S.R.L. {t('footer.rights', lang)}</p>
+    </div>
+  </div>
+</footer>

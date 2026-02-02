@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Quiénes Somos",
+    "mission": "Misión y Visión",
+    "units": "Unidades de Negocio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tagline": "Innovación, excelencia y propósito",
+    "subtitle": "Soluciones integrales en salud, educación y tecnología",
+    "cta": "Conoce nuestras unidades"
+  },
+  "about": {
+    "title": "¿Quiénes Somos?",
+    "subtitle": "Los pilares de nuestra empresa",
+    "intro": "En Shema Yisrael S.R.L., YESHÚA es el fundamento sobre el cual se edifican nuestras empresas, decisiones y servicio a la comunidad. Creemos que cada proyecto debe ser guiado por principios sólidos, donde no solo buscamos el éxito empresarial, sino también bendecir a través de lo que hacemos.",
+    "pillars": {
+      "teamwork": { "title": "Trabajo en Equipo", "desc": "Creemos en la colaboración para lograr el éxito colectivo." },
+      "respect": { "title": "Respeto", "desc": "Valoramos la dignidad de cada persona, promoviendo inclusión y equidad." },
+      "integrity": { "title": "Integridad", "desc": "Actuamos con transparencia y ética en todas nuestras relaciones." },
+      "growth": { "title": "Crecimiento Continuo", "desc": "Fomentamos el desarrollo personal y profesional." },
+      "excellence": { "title": "Excelencia", "desc": "Ofrecemos servicios de alta calidad con un sentido de mejora continua." },
+      "innovation": { "title": "Innovación", "desc": "Aplicamos tecnología y soluciones innovadoras." },
+      "social": { "title": "Responsabilidad Social", "desc": "Impactamos positivamente nuestra comunidad y el mundo." }
+    }
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "subtitle": "Servir con Propósito",
+    "text": "En Shema Yisrael S.R.L., nos comprometemos a proporcionar soluciones integrales de salud, educación y tecnología con los más altos estándares de calidad. A través de la excelencia en la atención médica, la formación profesional especializada y la implementación de tecnologías innovadoras, buscamos generar un impacto positivo y duradero en la vida de nuestros clientes, promoviendo el bienestar y el progreso de la sociedad.",
+    "quote": "El verdadero valor de un negocio no está en lo que hace, sino en cómo cambia la vida de las personas.",
+    "quoteAuthor": "Howard Schultz"
+  },
+  "vision": {
+    "title": "Nuestra Visión",
+    "subtitle": "Innovación para el futuro",
+    "text": "Ser la empresa líder en Latinoamérica en el desarrollo y provisión de soluciones integrales en los sectores de salud, educación y tecnología, consolidándonos como un referente de excelencia e innovación. Nuestra visión es expandir nuestra presencia regional, posicionando a nuestros centros médicos, programas educativos y desarrollos tecnológicos como modelos de referencia en calidad, impacto social y sostenibilidad."
+  },
+  "units": {
+    "title": "Nuestras Unidades de Negocio",
+    "subtitle": "Innovación, excelencia y propósito en cada sector",
+    "badge": "Nuestras Unidades",
+    "learnMore": "Conocer más"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "unit": "Unidad de interés",
+    "selectUnit": "Seleccione una unidad",
+    "general": "Consulta general",
+    "send": "Enviar mensaje",
+    "success": "Mensaje enviado exitosamente",
+    "error": "Error al enviar el mensaje"
+  },
+  "unitPage": {
+    "backHome": "Volver al inicio",
+    "contactUs": "Contáctanos",
+    "ourDifference": "Nuestro Valor Diferenciador",
+    "aboutUnit": "Sobre nosotros"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "tagline": "Innovación, excelencia y propósito"
+  }
+}

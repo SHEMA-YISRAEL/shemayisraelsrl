@@ -1,0 +1,3599 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Home - Desktop",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "9G2tl",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 24,
+          "padding": [
+            20,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "YYnMx",
+              "name": "Brand",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kgU2M",
+                  "name": "Logo Mark",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#0F172A",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "YpARx",
+                  "name": "Brand Text",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KA7rC",
+                      "fill": "#0F172A",
+                      "content": "SHEMA YISRAEL",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hPN8K",
+                      "fill": "#0F172A",
+                      "content": "Corporate Group",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kdxK5",
+              "name": "Nav",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "VLtd0",
+                  "fill": "#0F172A",
+                  "content": "Unidades",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "GZ6CG",
+                  "fill": "#0F172A",
+                  "content": "Nosotros",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "dEiLT",
+                  "fill": "#0F172A",
+                  "content": "Contacto",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SA4Gi",
+              "name": "Actions",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3ruUC",
+                  "name": "Lang",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 999,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8b54D",
+                      "fill": "#0F172A",
+                      "content": "ES",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hxHsS",
+                      "fill": "#0F172A",
+                      "content": "/",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VAEt8",
+                      "fill": "#0F172A",
+                      "content": "EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QxZ3Z",
+                  "name": "CTA",
+                  "fill": "#0F172A",
+                  "cornerRadius": 999,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kUEKH",
+                      "fill": "#0F172A",
+                      "content": "Cotizar / Get a quote",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JsjV4",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 64,
+          "padding": [
+            84,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "IFAJV",
+              "name": "Hero Copy",
+              "width": 620,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KGLJR",
+                  "name": "Badge",
+                  "fill": "#EEF2FF",
+                  "cornerRadius": 999,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1rZoV",
+                      "fill": "#0F172A",
+                      "content": "7 unidades de negocio · ES/EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "KzGGa",
+                  "fill": "#0F172A",
+                  "content": "Soluciones\nintegrales\npara proyectos\ny operaciones",
+                  "fontFamily": "Inter",
+                  "fontSize": 52,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "e6Tia",
+                  "fill": "#0F172A",
+                  "content": "Diseño corporativo base.\nReemplazar textos según brochure.",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "Ptoe2",
+                  "name": "Hero CTAs",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eNgOa",
+                      "name": "Primary",
+                      "fill": "#2563EB",
+                      "cornerRadius": 14,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E9Too",
+                          "fill": "#0F172A",
+                          "content": "Ver unidades / View units",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "semibold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "drMH6",
+                      "name": "Secondary",
+                      "fill": "#F1F5F9",
+                      "cornerRadius": 14,
+                      "padding": [
+                        14,
+                        18
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tH3jX",
+                          "fill": "#0F172A",
+                          "content": "Contactar / Contact",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "semibold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RhydH",
+                  "name": "Trust",
+                  "gap": 10,
+                  "padding": [
+                    12,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j9So2",
+                      "fill": "#0F172A",
+                      "content": "+",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qnq3r",
+                      "fill": "#0F172A",
+                      "content": "Brochure-driven structure · Replace with real metrics",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SApaz",
+              "name": "Hero Visual",
+              "width": "fill_container",
+              "height": 420,
+              "fill": "#0B1220",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "A3XCP",
+                  "name": "Visual Card",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "#111827",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t7MzF",
+                      "fill": "#0F172A",
+                      "content": "Imagen principal",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VNMgn",
+                      "fill": "#0F172A",
+                      "content": "Agregar arte / fotos del brochure",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UUTMV",
+                      "name": "Placeholder",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#0F172A",
+                      "cornerRadius": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UJap1",
+                          "fill": "#0F172A",
+                          "content": "HERO VISUAL",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0p2WJ",
+          "name": "Unidades",
+          "width": "fill_container",
+          "fill": "#F8FAFC",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            32,
+            80,
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "8rU9v",
+              "name": "Section Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "48fHN",
+                  "fill": "#0F172A",
+                  "content": "Unidades de negocio",
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "gD7hk",
+                  "fill": "#0F172A",
+                  "content": "Cada unidad tiene identidad visual propia (paleta). Reemplazar nombres/descripciones con los del brochure.",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BVfEJ",
+              "name": "Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yI83t",
+                  "name": "Row 1",
+                  "width": "fill_container",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "uhudY",
+                      "name": "Unidad 01",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ZNudo",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#2563EB",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "VtxK1",
+                          "fill": "#0F172A",
+                          "content": "Unidad 01",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VGfzN",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 01",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "26Xc0",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Fsbyz",
+                      "name": "Unidad 02",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sCHyE",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#10B981",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZoKQb",
+                          "fill": "#0F172A",
+                          "content": "Unidad 02",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hxMSj",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 02",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PodTO",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p2LGf",
+                      "name": "Unidad 03",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tnkaJ",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#F59E0B",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "nQxyA",
+                          "fill": "#0F172A",
+                          "content": "Unidad 03",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2LSzv",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 03",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tGkXQ",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "s535Y",
+                  "name": "Row 2",
+                  "width": "fill_container",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qC5C9",
+                      "name": "Unidad 04",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Dr1v8",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#8B5CF6",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "yKle2",
+                          "fill": "#0F172A",
+                          "content": "Unidad 04",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "P7Ah1",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 04",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Rclan",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8dO2t",
+                      "name": "Unidad 05",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rpbuo",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#06B6D4",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "EvIVP",
+                          "fill": "#0F172A",
+                          "content": "Unidad 05",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o9aTX",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 05",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hgNR2",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AnVdB",
+                      "name": "Unidad 06",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kaMWm",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#F43F5E",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "RtIpD",
+                          "fill": "#0F172A",
+                          "content": "Unidad 06",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KIGJM",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 06",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "m8lJa",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q2IFG",
+                  "name": "Row 3",
+                  "width": "fill_container",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4FN6i",
+                      "name": "Unidad 07",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 18,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YUVKG",
+                          "name": "Bar",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#0F172A",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "text",
+                          "id": "h2Po0",
+                          "fill": "#0F172A",
+                          "content": "Unidad 07",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "37vLG",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 07",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NZhOe",
+                          "fill": "#0F172A",
+                          "content": "Descripción breve ES/EN (del brochure).",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yjmPh",
+          "name": "Nosotros teaser",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 48,
+          "padding": [
+            84,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "PRLag",
+              "name": "About Copy",
+              "width": 620,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KwweS",
+                  "fill": "#0F172A",
+                  "content": "Nosotros / About",
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "JBIxp",
+                  "fill": "#0F172A",
+                  "content": "Misión, visión y valores (reemplazar según brochure).",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "9tt7e",
+                  "name": "Pills",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fhCnW",
+                      "name": "P1",
+                      "fill": "#F1F5F9",
+                      "cornerRadius": 999,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ovnVT",
+                          "fill": "#0F172A",
+                          "content": "Calidad",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "semibold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dfP0o",
+                      "name": "P2",
+                      "fill": "#F1F5F9",
+                      "cornerRadius": 999,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7tIuI",
+                          "fill": "#0F172A",
+                          "content": "Seguridad",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "semibold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "L4zZF",
+                      "name": "P3",
+                      "fill": "#F1F5F9",
+                      "cornerRadius": 999,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZUzuF",
+                          "fill": "#0F172A",
+                          "content": "Sustentabilidad",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "semibold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZtZAr",
+                  "name": "About CTA",
+                  "fill": "#0F172A",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cSwqI",
+                      "fill": "#0F172A",
+                      "content": "Conocer más / Learn more",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RhpfW",
+              "name": "About Visual",
+              "width": "fill_container",
+              "height": 360,
+              "fill": "#F8FAFC",
+              "cornerRadius": 24,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Omqiu",
+                  "fill": "#0F172A",
+                  "content": "Foto institucional / Team photo",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Y7HUg",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0B1220",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "1zrus",
+              "name": "Footer Top",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "q5HxD",
+                  "name": "Footer Brand",
+                  "width": 420,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iPICt",
+                      "fill": "#ffffff",
+                      "content": "SHEMA YISRAEL",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FeOik",
+                      "fill": "#ffffff",
+                      "content": "Grupo corporativo · 7 unidades · ES/EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p1FDX",
+                  "name": "Footer Links",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "QrBKG",
+                      "name": "Empresa",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GObyA",
+                          "fill": "#0F172A",
+                          "content": "Empresa",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CiIbN",
+                          "fill": "#0F172A",
+                          "content": "Nosotros",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ax2So",
+                          "fill": "#0F172A",
+                          "content": "Unidades",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E6j2w",
+                      "name": "Contacto",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nS8ba",
+                          "fill": "#0F172A",
+                          "content": "Contacto",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pPTaB",
+                          "fill": "#0F172A",
+                          "content": "mail@empresa.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0zJPg",
+                          "fill": "#0F172A",
+                          "content": "+00 0000 0000",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SE1LR",
+              "name": "Footer Bottom",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2GHJC",
+                  "fill": "#ffffff",
+                  "content": "© 2026 Shema Yisrael. All rights reserved.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hShBZ",
+      "x": 1540,
+      "y": 0,
+      "name": "Home - Mobile",
+      "width": 390,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "0wZy6",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 12,
+          "padding": [
+            16,
+            18
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "uNTaM",
+              "name": "Menu",
+              "width": 40,
+              "height": 40,
+              "fill": "#F1F5F9",
+              "cornerRadius": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fVbNV",
+                  "fill": "#0F172A",
+                  "content": "≡",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mhSsm",
+              "name": "Brand",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "luYCv",
+                  "fill": "#0F172A",
+                  "content": "SHEMA YISRAEL",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "4h4zP",
+                  "fill": "#0F172A",
+                  "content": "Corporate Group",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R3cvv",
+              "name": "Lang",
+              "fill": "#F1F5F9",
+              "cornerRadius": 999,
+              "gap": 6,
+              "padding": [
+                8,
+                10
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "21txg",
+                  "fill": "#0F172A",
+                  "content": "ES",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "u6MNh",
+                  "fill": "#0F172A",
+                  "content": "EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7EGIt",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            22,
+            18
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "XVlfo",
+              "name": "Badge",
+              "fill": "#EEF2FF",
+              "cornerRadius": 999,
+              "padding": [
+                8,
+                10
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "v088E",
+                  "fill": "#0F172A",
+                  "content": "7 unidades · ES/EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "6s5hm",
+              "fill": "#0F172A",
+              "content": "Soluciones integrales\npara múltiples industrias",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "E2wYz",
+              "fill": "#0F172A",
+              "content": "Base corporativa lista para completar con el brochure.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "BaxTD",
+              "name": "CTAs",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GyKKM",
+                  "name": "Primary",
+                  "fill": "#2563EB",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EqfDg",
+                      "fill": "#0F172A",
+                      "content": "Ver unidades",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Jz9J5",
+                  "name": "Secondary",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iwud4",
+                      "fill": "#0F172A",
+                      "content": "Contactar",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QNvUV",
+              "name": "Visual",
+              "width": "fill_container",
+              "height": 220,
+              "fill": "#0B1220",
+              "cornerRadius": 20,
+              "padding": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Nu5uu",
+                  "fill": "#0F172A",
+                  "content": "HERO VISUAL",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "N37Mo",
+          "name": "Unidades",
+          "width": "fill_container",
+          "fill": "#F8FAFC",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            22,
+            18
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ier2o",
+              "fill": "#0F172A",
+              "content": "Unidades de negocio",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "zcNrl",
+              "name": "List",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8ap0R",
+                  "name": "U01",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fonfc",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#2563EB",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W9kti",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5FbEC",
+                          "fill": "#0F172A",
+                          "content": "Unidad 01",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uLG9L",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 01",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j1nVg",
+                  "name": "U02",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GL4Vc",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#10B981",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2g8XJ",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kCXQA",
+                          "fill": "#0F172A",
+                          "content": "Unidad 02",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AOu5v",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 02",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V63yX",
+                  "name": "U03",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lwIf2",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#F59E0B",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oANkF",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jzCOg",
+                          "fill": "#0F172A",
+                          "content": "Unidad 03",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XvPVD",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 03",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IF46W",
+                  "name": "U04",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IUvvs",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#8B5CF6",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RnesQ",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m5VwW",
+                          "fill": "#0F172A",
+                          "content": "Unidad 04",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0u60C",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 04",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "061JE",
+                  "name": "U05",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qyChR",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#06B6D4",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "J6j1G",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tnbWp",
+                          "fill": "#0F172A",
+                          "content": "Unidad 05",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hsFDj",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 05",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z9oLN",
+                  "name": "U06",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "k3ulM",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#F43F5E",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WDhdm",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XnUng",
+                          "fill": "#0F172A",
+                          "content": "Unidad 06",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gFsbt",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 06",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eVLtH",
+                  "name": "U07",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "gap": 12,
+                  "padding": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vw2Jz",
+                      "name": "Dot",
+                      "width": 12,
+                      "height": 12,
+                      "fill": "#0F172A",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MBMg5",
+                      "name": "Text",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C8NRT",
+                          "fill": "#0F172A",
+                          "content": "Unidad 07",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "m01dC",
+                          "fill": "#0F172A",
+                          "content": "Business Unit 07",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ii4sq",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0B1220",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            28,
+            18
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "UmMvs",
+              "fill": "#ffffff",
+              "content": "SHEMA YISRAEL",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "9am21",
+              "fill": "#ffffff",
+              "content": "mail@empresa.com · +00 0000 0000",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "bAssy",
+              "fill": "#ffffff",
+              "content": "© 2026",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "0enaT",
+      "x": 0,
+      "y": 3400,
+      "name": "Unidad - Template",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "3Je8Z",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 24,
+          "padding": [
+            20,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "dikuI",
+              "name": "Brand",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IT4vP",
+                  "name": "Logo Mark",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#0F172A",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "Xirve",
+                  "name": "Brand Text",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fUBbF",
+                      "fill": "#0F172A",
+                      "content": "SHEMA YISRAEL",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZVTK4",
+                      "fill": "#0F172A",
+                      "content": "Unidad / Unit",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JW17Y",
+              "name": "Nav",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ewZzW",
+                  "fill": "#0F172A",
+                  "content": "Inicio",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "GV3a3",
+                  "fill": "#0F172A",
+                  "content": "Unidades",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "67UBM",
+                  "fill": "#0F172A",
+                  "content": "Contacto",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nS3mZ",
+              "name": "Lang",
+              "fill": "#F1F5F9",
+              "cornerRadius": 999,
+              "gap": 8,
+              "padding": [
+                10,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "odB6w",
+                  "fill": "#0F172A",
+                  "content": "ES",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "tDZRF",
+                  "fill": "#0F172A",
+                  "content": "/",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "iC0Bn",
+                  "fill": "#0F172A",
+                  "content": "EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "J4yMy",
+          "name": "Unit Hero",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "2qhkc",
+              "name": "Unit Color",
+              "width": "fill_container",
+              "height": 10,
+              "fill": "#2563EB",
+              "cornerRadius": 999
+            },
+            {
+              "type": "text",
+              "id": "lXBes",
+              "fill": "#0F172A",
+              "content": "Unidad 01 (Nombre ES)",
+              "fontFamily": "Inter",
+              "fontSize": 44,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "JKpPY",
+              "fill": "#0F172A",
+              "content": "Business Unit 01 (Name EN)",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "semibold"
+            },
+            {
+              "type": "text",
+              "id": "cs1uF",
+              "fill": "#0F172A",
+              "content": "Resumen corto (ES) · Summary (EN). Reemplazar por copy del brochure.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "HWPkN",
+              "name": "Unit CTAs",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "63t2I",
+                  "name": "Primary",
+                  "fill": "#2563EB",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VhNf4",
+                      "fill": "#0F172A",
+                      "content": "Solicitar info / Request info",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kk214",
+                  "name": "Secondary",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4c15U",
+                      "fill": "#0F172A",
+                      "content": "Ver brochure / View brochure",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D6TNl",
+          "name": "Content",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            0,
+            80,
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "1zovZ",
+              "name": "Highlights",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "D4b6J",
+                  "name": "Card 1",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r5rzI",
+                      "fill": "#0F172A",
+                      "content": "Qué hacemos",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "i5OXa",
+                      "fill": "#0F172A",
+                      "content": "Bullets de servicios / capabilities.",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VRM1s",
+                  "name": "Card 2",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b6qxV",
+                      "fill": "#0F172A",
+                      "content": "Industrias",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n5u0p",
+                      "fill": "#0F172A",
+                      "content": "Segmentos / sectores atendidos.",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zMztp",
+                  "name": "Card 3",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AEmD6",
+                      "fill": "#0F172A",
+                      "content": "Paleta",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QmHgd",
+                      "name": "Swatches",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cpKRd",
+                          "name": "Primary",
+                          "width": 24,
+                          "height": 24,
+                          "fill": "#2563EB",
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "INvaZ",
+                          "name": "Secondary",
+                          "width": 24,
+                          "height": 24,
+                          "fill": "#1D4ED8",
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dKLPt",
+                          "name": "Accent",
+                          "width": 24,
+                          "height": 24,
+                          "fill": "#93C5FD",
+                          "cornerRadius": 8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "FHaHz",
+                      "fill": "#0F172A",
+                      "content": "Reemplazar con hex reales.",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HNjqW",
+              "name": "Bento",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "H6uBY",
+                  "name": "Gallery",
+                  "width": "fill_container",
+                  "height": 420,
+                  "fill": "#0B1220",
+                  "cornerRadius": 24,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b0Vrs",
+                      "fill": "#0F172A",
+                      "content": "Galería / Projects",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bviSp",
+                      "fill": "#0F172A",
+                      "content": "Insertar imágenes del brochure",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rME0J",
+                  "name": "Side",
+                  "width": 420,
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3oIgW",
+                      "name": "Stats",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nFkmq",
+                          "fill": "#0F172A",
+                          "content": "Indicadores",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lclNp",
+                          "fill": "#0F172A",
+                          "content": "Años · Proyectos · Cobertura",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CP3Im",
+                      "name": "CTA",
+                      "fill": "#2563EB",
+                      "cornerRadius": 24,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wIjWb",
+                          "fill": "#0F172A",
+                          "content": "Hablemos",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DHQaY",
+                          "fill": "#0F172A",
+                          "content": "Contacto directo para esta unidad.",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "NfKCx",
+                          "name": "Button",
+                          "fill": "#0F172A",
+                          "cornerRadius": 14,
+                          "padding": [
+                            12,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Xkaqb",
+                              "fill": "#0F172A",
+                              "content": "Contactar",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "semibold"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZI01a",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0B1220",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "GU1jy",
+              "fill": "#ffffff",
+              "content": "SHEMA YISRAEL · Unidad",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "teMKt",
+              "fill": "#ffffffff",
+              "content": "mail@empresa.com · +00 0000 0000",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fBX90",
+      "x": 1540,
+      "y": 3600,
+      "name": "Nosotros / About",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "tx9l8",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 24,
+          "padding": [
+            20,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ucgm1",
+              "name": "Brand",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bGNS2",
+                  "name": "Logo Mark",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#0F172A",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "1sSkR",
+                  "name": "Brand Text",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qOO4p",
+                      "fill": "#0F172A",
+                      "content": "SHEMA YISRAEL",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UEqlo",
+                      "fill": "#0F172A",
+                      "content": "Nosotros / About",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CLR88",
+              "name": "Nav",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Hdky7",
+                  "fill": "#0F172A",
+                  "content": "Inicio",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "HJbNM",
+                  "fill": "#0F172A",
+                  "content": "Unidades",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "sNBxc",
+                  "fill": "#0F172A",
+                  "content": "Contacto",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "82ZjP",
+              "name": "Lang",
+              "fill": "#F1F5F9",
+              "cornerRadius": 999,
+              "gap": 8,
+              "padding": [
+                10,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "G0yvd",
+                  "fill": "#0F172A",
+                  "content": "ES",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "qBPPb",
+                  "fill": "#0F172A",
+                  "content": "EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e6TMB",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 48,
+          "padding": [
+            84,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "BpoRF",
+              "name": "Copy",
+              "width": 640,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hnoit",
+                  "fill": "#0F172A",
+                  "content": "Construimos confianza,\nejecutamos con excelencia",
+                  "fontFamily": "Inter",
+                  "fontSize": 44,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "rDaKR",
+                  "fill": "#0F172A",
+                  "content": "Mission, vision, values and story. Reemplazar contenido según brochure.",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "DJ6Wc",
+                  "name": "Stats",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Urx7Y",
+                      "name": "S1",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bXwQH",
+                          "fill": "#0F172A",
+                          "content": "XX+",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LFB1B",
+                          "fill": "#0F172A",
+                          "content": "Años",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "R53FM",
+                      "name": "S2",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ik6sd",
+                          "fill": "#0F172A",
+                          "content": "XX+",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pUA2e",
+                          "fill": "#0F172A",
+                          "content": "Proyectos",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r0u45",
+                      "name": "S3",
+                      "fill": "#F8FAFC",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PSxD6",
+                          "fill": "#0F172A",
+                          "content": "XX",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "s7FJY",
+                          "fill": "#0F172A",
+                          "content": "Cobertura",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aPyjm",
+              "name": "Visual",
+              "width": "fill_container",
+              "height": 360,
+              "fill": "#0B1220",
+              "cornerRadius": 24,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oY8oa",
+                  "fill": "#0F172A",
+                  "content": "Foto / Brochure Visual",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IyJff",
+          "name": "Sections",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            0,
+            80,
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "s0WIR",
+              "name": "Mision Vision Valores",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xSORY",
+                  "name": "Mision",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r3QDt",
+                      "fill": "#0F172A",
+                      "content": "Misión",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ln4QC",
+                      "fill": "#0F172A",
+                      "content": "Texto ES / EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "03XuI",
+                  "name": "Visión",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l8bmp",
+                      "fill": "#0F172A",
+                      "content": "Visión",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "7EY06",
+                      "fill": "#0F172A",
+                      "content": "Texto ES / EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rTvCK",
+                  "name": "Valores",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FistR",
+                      "fill": "#0F172A",
+                      "content": "Valores",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dVSHN",
+                      "fill": "#0F172A",
+                      "content": "Bullets",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tjXfs",
+              "name": "Timeline",
+              "width": "fill_container",
+              "fill": "#0B1220",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "29HPm",
+                  "fill": "#0F172A",
+                  "content": "Historia / Timeline",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "IdZ5s",
+                  "fill": "#0F172A",
+                  "content": "Hito 1 · Hito 2 · Hito 3 (reemplazar)",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "btwgB",
+              "name": "Certs",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JiHlv",
+                  "name": "Cert 1",
+                  "width": "fill_container",
+                  "height": 140,
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Xdgb3",
+                      "fill": "#0F172A",
+                      "content": "Certificación / Norma",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JcRtM",
+                  "name": "Cert 2",
+                  "width": "fill_container",
+                  "height": 140,
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SubCs",
+                      "fill": "#0F172A",
+                      "content": "Certificación / Norma",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oNc6M",
+                  "name": "Cert 3",
+                  "width": "fill_container",
+                  "height": 140,
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 18,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "daNNj",
+                      "fill": "#0F172A",
+                      "content": "Certificación / Norma",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JYOMM",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0B1220",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "2YalF",
+              "fill": "#ffffff",
+              "content": "SHEMA YISRAEL",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "vYijC",
+              "fill": "#ffffffff",
+              "content": "© 2026 · mail@empresa.com · +00 0000 0000",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Kt0w3",
+      "x": 0,
+      "y": 6600,
+      "name": "Contacto / Contact",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Ik4h7",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 24,
+          "padding": [
+            20,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "77w7U",
+              "name": "Brand",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nJBZw",
+                  "name": "Logo Mark",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#0F172A",
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "wnktS",
+                  "name": "Brand Text",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QLmDG",
+                      "fill": "#0F172A",
+                      "content": "SHEMA YISRAEL",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JnrkV",
+                      "fill": "#0F172A",
+                      "content": "Contacto / Contact",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UBg9M",
+              "name": "Nav",
+              "width": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5qOAo",
+                  "fill": "#0F172A",
+                  "content": "Inicio",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "GUePd",
+                  "fill": "#0F172A",
+                  "content": "Unidades",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "m2Nqo",
+                  "fill": "#0F172A",
+                  "content": "Nosotros",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NDwfJ",
+              "name": "Lang",
+              "fill": "#F1F5F9",
+              "cornerRadius": 999,
+              "gap": 8,
+              "padding": [
+                10,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2Oh5I",
+                  "fill": "#0F172A",
+                  "content": "ES",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "WDAR6",
+                  "fill": "#0F172A",
+                  "content": "EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pg2Za",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "wB1IF",
+              "fill": "#0F172A",
+              "content": "Hablemos",
+              "fontFamily": "Inter",
+              "fontSize": 44,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "LxJiG",
+              "fill": "#0F172A",
+              "content": "Tell us about your project. Reemplazar datos de contacto con los reales.",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xRepl",
+          "name": "Body",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "gap": 18,
+          "padding": [
+            0,
+            80,
+            96,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "V6zNi",
+              "name": "Form",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tFwqJ",
+                  "fill": "#0F172A",
+                  "content": "Formulario",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "Z2Rwe",
+                  "name": "Field",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DXsis",
+                      "fill": "#0F172A",
+                      "content": "Nombre / Name",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dLwd5",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Joz28",
+                  "name": "Field",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LD3Cz",
+                      "fill": "#0F172A",
+                      "content": "Email",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fEN84",
+                      "name": "Input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bL3dz",
+                  "name": "Field",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8UEQV",
+                      "fill": "#0F172A",
+                      "content": "Mensaje / Message",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WI7j4",
+                      "name": "Textarea",
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H9Kqq",
+                  "name": "Submit",
+                  "fill": "#0F172A",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Dy2tv",
+                      "fill": "#0F172A",
+                      "content": "Enviar / Send",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qPflW",
+              "name": "Info",
+              "width": 420,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "e3U6w",
+                  "name": "Contact Card",
+                  "fill": "#0B1220",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PMTTq",
+                      "fill": "#0F172A",
+                      "content": "Contacto directo",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jQO3G",
+                      "fill": "#0F172A",
+                      "content": "mail@empresa.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XO7no",
+                      "fill": "#0F172A",
+                      "content": "+00 0000 0000",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bzsOB",
+                      "fill": "#0F172A",
+                      "content": "Dirección · Ciudad · País",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oh7Gc",
+                  "name": "Map",
+                  "width": "fill_container",
+                  "height": 260,
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 24,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Gcbw4",
+                      "fill": "#0F172A",
+                      "content": "Mapa / Map embed",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lFs32",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0B1220",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "JWeIg",
+              "fill": "#ffffffff",
+              "content": "SHEMA YISRAEL",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "95XgS",
+              "fill": "#ffffffff",
+              "content": "© 2026 · mail@empresa.com · +00 0000 0000",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "UzlPp",
+      "x": 1540,
+      "y": 6200,
+      "name": "Components & Tokens",
+      "width": 800,
+      "fill": "#F8FAFC",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "w5BE4",
+          "name": "Tokens",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 10,
+          "children": [
+            {
+              "type": "text",
+              "id": "zZwMZ",
+              "fill": "#0F172A",
+              "content": "Tokens & Paletas (placeholders)",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "7LwRC",
+              "fill": "#0F172A",
+              "content": "Reemplazar con colores exactos del brochure por unidad. Tipografía base: Inter.",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DxkUJ",
+          "name": "Typography",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 18,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "cyIUu",
+              "fill": "#0F172A",
+              "content": "H1 · 52px Bold",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "efk15",
+              "fill": "#0F172A",
+              "content": "H2 · 32px Bold",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "qaUAn",
+              "fill": "#0F172A",
+              "content": "Body · 16px Regular — Texto de ejemplo para lectura y contraste.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IpxoQ",
+          "name": "Unit Palettes",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 18,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "haxNH",
+              "fill": "#0F172A",
+              "content": "Unidades (7) · Paletas",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "nexxU",
+              "name": "U01",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6VFC5",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#2563EB",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "pRhnu",
+                  "fill": "#0F172A",
+                  "content": "Unidad 01 — #2563EB (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QM6dQ",
+              "name": "U02",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "02HS0",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#10B981",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "MV4f9",
+                  "fill": "#0F172A",
+                  "content": "Unidad 02 — #10B981 (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JSzGF",
+              "name": "U03",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kGsck",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#F59E0B",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "5ZiAB",
+                  "fill": "#0F172A",
+                  "content": "Unidad 03 — #F59E0B (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FfmNN",
+              "name": "U04",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ux1oQ",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#8B5CF6",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "GJA0Z",
+                  "fill": "#0F172A",
+                  "content": "Unidad 04 — #8B5CF6 (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aDPSu",
+              "name": "U05",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VBTmY",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#06B6D4",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "pHlEW",
+                  "fill": "#0F172A",
+                  "content": "Unidad 05 — #06B6D4 (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "luH5o",
+              "name": "U06",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "eOUPM",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#F43F5E",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "QdVIC",
+                  "fill": "#0F172A",
+                  "content": "Unidad 06 — #F43F5E (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aexJ9",
+              "name": "U07",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FOlEB",
+                  "name": "Swatch",
+                  "width": 44,
+                  "height": 28,
+                  "fill": "#0F172A",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "t7XQw",
+                  "fill": "#0F172A",
+                  "content": "Unidad 07 — #0F172A (Primary)",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

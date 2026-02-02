@@ -1,8 +1,20 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import tailwindcss from '@tailwindcss/vite';
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://shemayisraelsrl.com', // username github or domain
-  base: '/', // name repo or root route
+  // username github or domain
+  site: 'https://shemayisraelsrl.com',
+
+  // name repo or root route
+  base: '/',
+
+  vite: {
+    plugins: [tailwindcss()]
+  },
+
+  integrations: [react()]
 });
