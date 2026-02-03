@@ -12,6 +12,14 @@ const { lang } = Astro.props;
 const unit = getUnit('yeshua')!;
 
 // Medical icons SVG paths
+// Category images mapping
+const categoryImages: Record<string, string> = {
+  'ginecologia': '/yeshua/ginecologia.jpg',
+  'fisioterapia': '/yeshua/fisioterapia.jpg',
+  'psicologia': '/yeshua/psicologia.png',
+  'imagenologia': '/yeshua/imageneologia.jpg',
+};
+
 const icons: Record<string, string> = {
   'medical-heart': 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
   'microscope': 'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z',
@@ -55,22 +63,42 @@ const icons: Record<string, string> = {
 
     <!-- Specialties Grid -->
     {yeshuaServices.map((category, catIndex) => (
-      <div class="mb-16 last:mb-0 animate-on-scroll" style={`animation-delay: ${catIndex * 100}ms`}>
-        <!-- Category Header -->
-        <div class="flex items-center gap-4 mb-8">
-          <div
-            class="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg"
-            style={`background: linear-gradient(135deg, ${unit.colors.primary}, ${unit.colors.secondary})`}
-          >
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold" style={`color: ${unit.colors.primary}`}>
-              {category.name[lang]}
-            </h3>
-            <div class="h-1 w-20 rounded-full mt-2" style={`background: linear-gradient(90deg, ${unit.colors.primary}, ${unit.colors.accent})`}></div>
+      <div class="mb-20 last:mb-0 animate-on-scroll" style={`animation-delay: ${catIndex * 100}ms`}>
+        <!-- Category Header with Image -->
+        <div class="relative rounded-3xl overflow-hidden mb-8 shadow-xl" style={`box-shadow: 0 20px 50px -12px ${unit.colors.primary}30`}>
+          <!-- Category Image -->
+          <div class="relative h-64 md:h-80 2xl:h-130">
+            <img
+              src={categoryImages[category.id] || '/yeshua/ginecologia.jpg'}
+              alt={category.name[lang]}
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-linear-to-r from-black/70 via-black/40 to-transparent"></div>
+
+            <!-- Content over image -->
+            <div class="absolute inset-0 flex items-center p-8 md:p-12">
+              <div class="max-w-xl">
+                <div
+                  class="w-14 h-14 rounded-xl flex items-center justify-center shadow-lg mb-4"
+                  style={`background: linear-gradient(135deg, ${unit.colors.primary}, ${unit.colors.secondary})`}
+                >
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-3 drop-shadow-lg">
+                  {category.name[lang]}
+                </h3>
+                <div class="h-1.5 w-24 rounded-full" style={`background: linear-gradient(90deg, ${unit.colors.primary}, ${unit.colors.accent})`}></div>
+                <p class="text-white/80 mt-4 text-lg hidden md:block">
+                  {lang === 'es'
+                    ? 'Atención especializada con equipamiento de última generación'
+                    : 'Specialized care with state-of-the-art equipment'}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

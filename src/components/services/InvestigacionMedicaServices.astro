@@ -1,0 +1,117 @@
+---
+import type { Lang } from '../../i18n';
+import { t } from '../../i18n';
+import { getUnit } from '../../data/units';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const unit = getUnit('investigacion-medica')!;
+
+const sectionTexts = {
+  teamTitle: { es: 'Nuestro Equipo de Investigación', en: 'Our Research Team' },
+  teamSubtitle: {
+    es: 'Profesionales comprometidos con la innovación médica y el avance científico.',
+    en: 'Professionals committed to medical innovation and scientific advancement.'
+  },
+  badge: { es: 'Equipo Científico', en: 'Scientific Team' }
+};
+
+const researchAreas = [
+  {
+    icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01',
+    title: { es: 'Estudios Clínicos', en: 'Clinical Studies' },
+    desc: { es: 'Investigación aplicada con estándares internacionales', en: 'Applied research with international standards' }
+  },
+  {
+    icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
+    title: { es: 'Publicaciones Científicas', en: 'Scientific Publications' },
+    desc: { es: 'Difusión del conocimiento médico validado', en: 'Dissemination of validated medical knowledge' }
+  }
+];
+---
+
+<section class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate-on-scroll">
+      <div
+        class="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full"
+        style={`background: ${unit.colors.light}; border: 1px solid ${unit.colors.primary}30`}
+      >
+        <svg class="w-5 h-5" style={`color: ${unit.colors.primary}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+        </svg>
+        <span class="text-sm font-semibold uppercase tracking-wider" style={`color: ${unit.colors.primary}`}>
+          {sectionTexts.badge[lang]}
+        </span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4" style={`color: ${unit.colors.secondary}`}>
+        {sectionTexts.teamTitle[lang]}
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        {sectionTexts.teamSubtitle[lang]}
+      </p>
+    </div>
+
+    <!-- Team Image -->
+    <div class="mb-16 animate-on-scroll">
+      <div
+        class="relative rounded-3xl overflow-hidden shadow-2xl"
+        style={`box-shadow: 0 25px 60px -12px ${unit.colors.primary}30`}
+      >
+        <img
+          src="/investigacionMedica/teamInvestigacion.png"
+          alt={sectionTexts.teamTitle[lang]}
+          class="w-full h-auto object-cover"
+          loading="lazy"
+        />
+        <!-- Gradient overlay at bottom -->
+        <div
+          class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/50 to-transparent"
+        ></div>
+        <!-- Caption -->
+        <div class="absolute bottom-6 left-6 right-6">
+          <p class="text-white text-lg md:text-xl font-medium drop-shadow-lg">
+            {lang === 'es'
+              ? 'Equipo multidisciplinario comprometido con la excelencia científica'
+              : 'Multidisciplinary team committed to scientific excellence'}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Areas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 animate-on-scroll">
+      {researchAreas.map((area, index) => (
+        <div
+          class="group p-6 rounded-2xl bg-white border border-slate-100 hover:border-slate-200 hover:shadow-xl transition-all duration-300"
+          style={`animation-delay: ${index * 100}ms`}
+        >
+          <div
+            class="w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
+            style={`background: ${unit.colors.light}`}
+          >
+            <svg
+              class="w-7 h-7"
+              style={`color: ${unit.colors.primary}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={area.icon}></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style={`color: ${unit.colors.secondary}`}>
+            {area.title[lang]}
+          </h3>
+          <p class="text-slate-600">
+            {area.desc[lang]}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
