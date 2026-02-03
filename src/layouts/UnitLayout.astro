@@ -2,6 +2,9 @@
 import Layout from './Layout.astro';
 import { t, type Lang, getLocalizedPath } from '../i18n';
 import type { BusinessUnit } from '../data/units';
+import YeshuaServices from '../components/services/YeshuaServices.astro';
+import NeshimaServices from '../components/services/NeshimaServices.astro';
+import YeshivaServices from '../components/services/YeshivaServices.astro';
 
 interface Props {
   unit: BusinessUnit;
@@ -11,6 +14,7 @@ interface Props {
 
 const { unit, lang, youtubeId } = Astro.props;
 const title = `${unit.name[lang]} — ${unit.subtitle[lang]} | Shema Yisrael S.R.L.`;
+
 ---
 
 <Layout lang={lang} title={title} description={unit.description[lang].slice(0, 160)}>
@@ -109,6 +113,11 @@ const title = `${unit.name[lang]} — ${unit.subtitle[lang]} | Shema Yisrael S.R
       </div>
     </section>
   )}
+
+  <!-- Services Section (unit-specific) -->
+  {unit.slug === 'yeshua' && <YeshuaServices lang={lang} />}
+  {unit.slug === 'neshima' && <NeshimaServices lang={lang} />}
+  {unit.slug === 'yeshiva' && <YeshivaServices lang={lang} />}
 
   <!-- Content -->
   <section class="py-16 md:py-24 bg-white">
